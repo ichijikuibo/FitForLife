@@ -359,7 +359,8 @@ public class FitForLife extends JFrame {
 		getDdlType().setSelectedIndex(0);
 		getDdlDuration().setSelectedIndex(0);
 		getCbFamily().setSelected(false);
-
+		getLblFeeResult().setText("");
+		getLblMonthlyFeeResult().setText("");
 
 		validateForm();
 	}
