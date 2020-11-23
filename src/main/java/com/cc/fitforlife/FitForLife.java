@@ -266,7 +266,7 @@ public class FitForLife extends JFrame {
 		getLblFeeResult().setText(String.format("£%.2f",cost));
 		getLblMonthlyFeeResult().setText(String.format("£%.2f",monthlyCost));
 	}
-	public double calculateCost(int type,int age,int visits,double duration,boolean family)
+	public static double calculateCost(int type,int age,int visits,double duration,boolean family)
 	{
 		double cost = 0;
 		if(type==1)
@@ -287,7 +287,7 @@ public class FitForLife extends JFrame {
 		if(family)cost*=0.95;
 		return cost;
 	}
-	public double calculateMonthlyCost(double cost,int duration)
+	public static double calculateMonthlyCost(double cost,int duration)
 	{
 		return (cost+5)/duration;
 	}
