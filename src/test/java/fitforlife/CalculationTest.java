@@ -11,10 +11,10 @@ import org.junit.jupiter.api.Test;
 
 import com.cc.fitforlife.FitForLife;
 
-class CalculationTest {
+public class CalculationTest {
 
 	@Test
-	void testCalculateCost() {
+	public void testCalculateCost() {
 		List<String> data = openCSV("src/test/resources/testdata.csv");
 		for(String test:data)
 		{
